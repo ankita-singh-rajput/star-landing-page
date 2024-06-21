@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbuck Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse, ab, nisi voluptate voluptatibus voluptas consequuntur culpa accusamus id ullam eum, recusandae optio porro vitae repudiandae tempora. Assumenda, perferendis dolores.</p>
+                <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="img1.png" class="starbucks">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb2.jpg" onclick="imgSlider('thumb2.jpg');changeCircle('#017143')"></li>
+            <li><img src="thumb1.jpg" onclick="imgSlider('thumb1.jpg');changeCircle('#eb7495')"></li>
+            <li><img src="thumb3.jpg" onclick="imgSlider('thumb3.jpg');changeCircle('#017143')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
+            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircle(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
